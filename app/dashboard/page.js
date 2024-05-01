@@ -419,6 +419,7 @@ function Page() {
               })
               .map((data, index) => (
                 <Draggable
+                  key={index}
                   id={data.name}
                   onDragStart={() => {
                     setDraggingTask(data);
